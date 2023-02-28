@@ -1,0 +1,230 @@
+:root{
+    color: #715fcd
+    ;
+}
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing:border-box ;
+box-sizing: border-box;
+
+}
+
+body{
+  
+    font-family: 'work sans';
+   
+}
+
+ /* 
+@media (min-width:768px) {
+.contenir{
+    width: 768px;
+} m x c
+}
+
+@media (min-width:992px)
+{
+    .contenir{
+       width: 970px;
+    }
+}  
+@media (min-width:1300px){
+    .contenir{
+        width: 1300px;
+    } 
+}  */
+/* start header css */
+.heade{ background-color: #ffffff;
+    padding: 20px;
+}
+.heade .contenir{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heade .contenir a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.heade .logo{
+    width: 100px;
+}
+.heade .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.heade .links{
+    position: relative;
+}
+
+.heade .links:hover .icon span:nth-child(2){
+    width:100%;
+    
+}
+
+.heade .contenir .links .icon span{
+background-color: #333;
+margin-bottom:5px;
+}
+.heade .links:hover{
+    display: inline;
+}
+
+.heade  .links .icon span:first-child{
+    width: 100%;
+    height: 2px;
+}
+.heade  .links .icon span:nth-child(2){
+    width: 70%;
+    height: 2px;
+    transition: .3s;
+}.heade .links .icon span:last-child {
+    width: 100%;
+    height: 2px;
+}
+.heade .links ul::before{
+    content: "";
+    border-style: solid ;
+    border-width: 10px;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    border-color: transparent transparent #f6f6f6 ;
+
+}
+.heade .links ul{
+    font-weight:bolder;
+    background-color: #f6f6f6;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    min-width: 150PX;
+    
+    position: absolute;
+    right: -9px;
+    top: calc(100% + 1px);
+    margin: 10px;
+   display: none ;
+} 
+.heade a{
+    
+    display: block;
+    padding: 10px;
+    transition: 0.7S;    
+}
+.heade .links a:hover{
+    padding-left: 25px;
+}
+.heade .links ul li{
+    border-bottom:  1px solid #ddd;
+}
+.heade .links:hover ul{
+    display: block;
+    
+}
+/* end header css */
+
+
+/* start landing css */
+
+.landing{
+    z-index: -1;
+    background-image: url(../imgs/los-picos-de-montanas-8859.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+.landing .text-lan h1{
+
+    font-weight: 200;
+    text-transform: uppercase;
+ 
+}
+.landing .text-lan{
+    position:absolute ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+.landing .text-lan p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+/* end landing css */
+
+
+/* start  css */
+.features{
+ padding-top: 60px;
+ padding-bottom: 60px;
+ background-color: #f6f6f6;
+line-height: 1.4;
+text-align: center;
+}
+.features .contener{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 10px;
+    grid-gap:20px ;
+    
+    
+}
+.features .fit{padding: 30px;}
+.features .fit h3{
+    font-weight:800 ;
+}
+.features .fit p{
+    font-size: 17px;
+}
+
+
+.special-heading{
+    text-align: center;
+    font-size: 100px;
+    color: #f3eeee;
+    letter-spacing: 1px;
+}
+.special-heading + p{
+    text-align: center;
+    margin-top: -25px;
+}
+.servses{
+    padding-top :60px; 
+    padding-bottom: 60px;
+}
+
+
+.icc{
+    font-size: 7vh;
+}
+.servcontener{
+display: grid;
+
+grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+}
+.col{
+    text-align: center;
+    padding: 30px;
+}
+.contrenir1{
+   
+    display:grid;
+   grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+
+   
+}
+img{
+  max-width: 70%;
+  
+}
+.card{
+  height: 30px; 
+}
